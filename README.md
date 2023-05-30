@@ -1,6 +1,8 @@
 
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+![Screenshot 2023-05-30 021705](https://github.com/ibmancodin23/Azure-Honeynet-SOC-Project/assets/19808403/85dc5588-8bde-45a0-b7f4-230116331359)
+
+
 
 ## Introduction
 
