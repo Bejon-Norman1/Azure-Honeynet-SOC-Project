@@ -68,23 +68,35 @@ By conducting a thorough comparison of the security metrics before and after the
 
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![(Before) nsg-malicious-allowed ](https://github.com/ibmancodin23/Azure-Honeynet-SOC-Project/assets/19808403/ec8ae96d-030f-4208-8eb8-ca9623d22b8c)
+
+
+- The showcased attack map offers a visual depiction of the direct consequences that occur when the <b>Network Security Group (NSG)</b> is left unsecured, permitting unrestricted entry of malicious traffic. This compelling visualization strongly highlights the critical significance of implementing stringent security measures, including the enforcement of restrictions on NSG rules. Such measures play a pivotal role in proactively preventing unauthorized access and effectively minimizing potential threats to the system.
+
+
+![(Before) syslog-ssh-auth-fail](https://github.com/ibmancodin23/Azure-Honeynet-SOC-Project/assets/19808403/706314f4-38ca-45c1-ad0c-c787538231a8)
+
+- The highlighted attack map draws attention to a notable occurrence of <b>syslog authentication failures</b> observed on the deployed Linux server, which indicates unauthorized access attempts originating from external sources. This serves as a pivotal reminder of the indispensable need to prioritize the security of Linux servers by implementing robust authentication mechanisms and maintaining vigilant monitoring of system logs to promptly detect and respond to any signs of intrusion attempts.
+
+![(Before) windows-rdp-smb-auth-fail](https://github.com/ibmancodin23/Azure-Honeynet-SOC-Project/assets/19808403/d5d6d41c-a4f9-47c3-bef4-7bf72d5e0d4e)
+
+- This visual representation serves as a compelling reminder of the paramount importance of securing remote access and file sharing services. By implementing robust security measures in these areas, organizations can effectively mitigate the risk of unauthorized access and potential cyber threats, ensuring the protection of valuable data and resources.
+
+By understanding the implications showcased in these attack maps, organizations can better appreciate the need for robust security measures to protect their networks, systems, and data from malicious actors.
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time   2023-05-24 08:48:43
+Stop Time    2023-05-25 08:48:43
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 41042
+| Syslog                   | 5439
+| SecurityAlert            | 2
+| SecurityIncident         | 219
+| AzureNetworkAnalytics_CL | 412
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -93,13 +105,13 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2023-05-25 19:22:57
+Stop Time	2023-05-26 19:22:57
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
+| SecurityEvent            | 14127
+| Syslog                   | 290
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
