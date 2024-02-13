@@ -53,7 +53,7 @@ The purpose of this insecure setup was to actively observe and analyze potential
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
-In the subsequent phase, known as the <b>"AFTER"</b> stage, I implemented significant enhancements to strengthen the security posture of the environment. These improvements focused on robust hardening measures and stringent security controls. Here are the key highlights of the improvements:
+During the <b>"AFTER"</b> stage of the project, environment was hardened, and stringent security controls were implemented to enhance the security posture and satisfy NIST SP 800-53 Rev4 SC-7(3) Access Points. These improvements focused on robust hardening measures, including key highlights of the enhancements:
 
 - 1.) <b>Reinforced Network Security Groups (NSGs):</b> I bolstered the NSGs by implementing stringent access rules. This ensured that only trusted sources, such as specific authorized IP addresses, were allowed to connect to the virtual machines. By limiting access to known entities, I mitigated the risk of unauthorized entry and potential attacks.
 
