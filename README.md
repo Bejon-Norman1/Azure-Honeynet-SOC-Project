@@ -23,17 +23,16 @@ The central aim of this project was to create intentionally vulnerable virtual m
 - Network Security Group (NSG)
 - Virtual Machines (2x windows, 1x linux)
 - Log Analytics Workspace
-- Azure Key Vault
+- Azure Key Vault for secure secret management 
 - Azure Storage Account for data storage
-- Microsoft Sentinel
+- Microsoft Sentinel for Security Information and Event Management(SIEM)
 - Windows Remote Desktop to remotely connect to virtual machines
-- Microsoft Defender Cloud  
-- Command Line Interface (CLI)
-- PowerShell 
-- Visual Studio Code
-- Kusto Query Language (KQL)
-- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
-- [NIST SP 800-61 Revision 2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final) 
+- Microsoft Defender Cloud to protect Cloud resources 
+- Command Line Interface (CLI) for system management 
+- PowerShell for Automation and Configuration management 
+- Kusto Query Language (KQL) 
+- [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls 
+- [NIST SP 800-61 Revision 2](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final) for Incident Hardening & Guidance 
 
 
 ## Architecture Before Hardening / Security Controls
